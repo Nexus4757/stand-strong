@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullying Prevention Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="stop_bully.jpg" alt="Bullying Prevention Resources Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="teachers.html">For Teachers & Educators</a></li>
+                <li><a href="parents.html">For Parents</a></li>
+                <li><a href="policymakers.html">For Policymakers</a></li>
+                <li><a href="resources.html">Additional Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Bullying Prevention Resources</h1>
+            <p>Empowering teachers, parents, and policymakers to create a safer environment for children.</p>
+        </header>
+        <section class="hero">
+            <img src="hero.jpg" alt="Hero Image" height="400" width="550">
+            <div class="hero-text">
+                <h2>Support and Strategies for All</h2>
+                <p>Discover actionable strategies, tools, and advice to prevent bullying and foster a positive community.</p>
+                <div class="cta-buttons">
+                    <a href="teachers.html">For Teachers & Educators</a>
+                    <a href="parents.html">For Parents</a>
+                    <a href="policymakers.html">For Policymakers</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Get the current page URL
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Highlight the correct link based on the URL
+        const links = document.querySelectorAll('.sidebar nav ul li a');
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

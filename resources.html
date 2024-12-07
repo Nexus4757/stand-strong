@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Adults - Bullying Prevention</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="stop_bully.jpg" alt="Bullying Prevention Resources Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teachers.html">For Teachers & Educators</a></li>
+                <li><a href="parents.html">For Parents</a></li>
+                <li><a href="policymakers.html">For Policymakers</a></li>
+                <li><a href="resources.html" class="active">Additional Resources</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="main-content">
+        <header>
+            <h1>Resources</h1>
+        </header>
+        <section class="resources">
+            <h2>Available Resources</h2>
+            <p>Below are some helpful resources for anyone affected by bullying:</p>
+            <ul>
+                <li>
+                    <strong>StopBullying.gov (USA):</strong> 
+                    <a href="https://www.stopbullying.gov/" target="_blank">Visit Website</a>
+                </li>
+                <li>
+                    <strong>Report Cyberbullying:</strong> 
+                    <a href="tel:18773555787.">1-877-355-5787.</a>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We’re here to support you. Reach out to us for any questions or additional help.</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <script>
+            document.getElementById('contact').addEventListener('submit', async (e) => {
+                e.preventDefault();
+        
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                const response = await fetch('http://localhost:5000/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message }),
+                });
+        
+                const data = await response.json();
+                alert(data.message); // Show a success/error message
+            });
+        </script> -->
+        
+    </div>
+</body>
+</html>
